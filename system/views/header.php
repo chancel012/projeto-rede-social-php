@@ -6,6 +6,3 @@
 	<title>Login</title>
 </head>
 <body>
-	<p>minha pagina de login</p>
-</body>
-</html>
