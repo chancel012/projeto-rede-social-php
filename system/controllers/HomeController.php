@@ -21,8 +21,8 @@ class HomeController
 
 		$this->tpl = new Tpl;
 
-		//$this->setTpl("header");
-		$this->tpl->draw("header", false);
+		
+		
 	}
 
 	function __destruct()
@@ -31,29 +31,31 @@ class HomeController
 		//$this->setTpl("footer");
 	}
 
-	// public function setTpl($template, $data=array(), $returnHtml = false)
-	// {
-	// 	$this->setData($data);
+	 public function setTpl($template, $data=array(), $returnHtml = false)
+	 {
+	 	$this->setData($data);
 
-	// 	return $this->tpl->draw($template, $returnHtml);
-	// }
+	 	return $this->tpl->draw($template, $returnHtml);
+	 }
 
-	// public function setData($data= array())
-	// {
-	// 	foreach ($data as $key => $value) {
-	// 		$this->tpl->assign($key, $value);
-	// 	}
-	// }
+	 public function setData($data= array())
+	 {
+	 	foreach ($data as $key => $value) {
+	 		$this->tpl->assign($key, $value);
+	 	}
+	 }
 
 	public function login()
 	{
-		$this->tpl->draw("login", false);
+		$this->setTpl("header", array('title_pagina' => 'Pagina de Login'));
+		$this->tpl->draw("header", false);
 		//$this->setTpl("login");
 	}
 
 	public function feed()
 	{
-		$this->tpl->draw("feed", false);
+		$this->setTpl("header", array('title_pagina' => 'Seu feed'));
+		$this->tpl->draw("header", false);
 	}
 }
 ?>
