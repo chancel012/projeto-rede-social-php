@@ -17,6 +17,9 @@ class HomeController
 			'debug' => true
 		);
 
+		/*var_dump($config);
+		die();*/
+
 		Tpl::configure($config);
 
 		$this->tpl = new Tpl;
@@ -48,14 +51,40 @@ class HomeController
 	public function login()
 	{
 		$this->setTpl("header", array('title_pagina' => 'Pagina de Login'));
-		$this->tpl->draw("header", false);
-		//$this->setTpl("login");
+		$this->setTpl("login");
 	}
 
 	public function feed()
 	{
 		$this->setTpl("header", array('title_pagina' => 'Seu feed'));
-		$this->tpl->draw("header", false);
+
+	}
+
+	public function feed_usuario($request, $response, $args) 
+	{
+		$nome = $args['usuario'];
+		$this->setTpl("header", array('title_pagina' => ' Feed de '.$nome));
+		$this->setTpl('feed_usuario' , array('nome_usuario' => $nome));
+	}
+	public function configuracao()
+	{
+		$this->setTpl("header", array('title_pagina' => ' Configurações'));
+		$this->setTpl("configuracao");	
+	}
+	public function pesquisa()
+	{
+		$this->setTpl("header",array('title_pagina' => ' Pesquisa'));
+		$this->setTpl("pesquisa");
+	}
+	public function mensagens()
+	{
+		$this->setTpl("header",array('title_pagina' => ' Minhas mensagens'));
+		$this->setTpl("mensagens");
+	}
+	public function fotos()
+	{
+		$this->setTpl("header",array('title_pagina' => ' Minhas fotos'));
+		$this->setTpl("fotos");
 	}
 }
 ?>

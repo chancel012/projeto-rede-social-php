@@ -1,10 +1,10 @@
-<!DOCTYPE HTML>
+<?php if(!class_exists('Rain\Tpl')){exit;}?><!DOCTYPE HTML>
 
 <html lang=“pt-br”>
 <head>
      <meta charset=“utf-8”/>
      <meta content=“width=device-width, initial-scale=1, maximum-scale=1” name=“viewport”>
-     <title>{$title_pagina}</title>
+     <title><?php echo htmlspecialchars( $title_pagina, ENT_COMPAT, 'UTF-8', FALSE ); ?></title>
      <link href="resources/css/css.css" rel="stylesheet"/>
      <script src="resources/js/js.min.js"></script>
 </head>

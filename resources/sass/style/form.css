@@ -1,0 +1,17 @@
+input{
+    border-radius: 10px;
+    line-height: 40px;
+    height: 40px;
+    background-color: #fff;
+    color: #8a8a8a;
+    padding: 0 20px;
+    margin-right: 13px;
+    font-weight: bold;
+
+}
+input[type="submit"]{
+    background-color: #01669c;
+    color: #fff;  
+    text-transform:uppercase;
+    cursor:pointer;
+}
