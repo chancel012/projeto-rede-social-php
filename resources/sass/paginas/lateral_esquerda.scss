@@ -1,0 +1,22 @@
+.lateral_esquerda{
+    width: 100%;
+    padding: 25px 0;
+    @include desktop{
+        width: 22,85%;
+    }
+    .topo{
+        width: 100%;
+        display: inline-flex;
+        align-items: center;
+
+        img{
+            width: 60px;
+            margin-right: 18px;
+            border-radius: 50%;
+            background-color: $color_destaque;
+        }
+        .info{
+            width:calc(100% - 78px);
+        }
+    }
+}

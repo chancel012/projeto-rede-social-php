@@ -2,7 +2,7 @@
 
 $color:#333;
 $color_destaque:#2f7b21;
-$color_background_botao: color_background_botao;
+$color_background_botao: #01669c;
 $font_size:17px;
 $font_family:'Montserrat Regular';
 $line_height:1.3;
@@ -20,3 +20,6 @@ $line_height:1.3;
 
 /*Páginas */ 
 @import"paginas/login";
+@import"paginas/lateral_esquerda";
+@import"paginas/lateral_direita";
+@import"paginas/feed";

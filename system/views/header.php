@@ -6,6 +6,8 @@
      <meta content=“width=device-width, initial-scale=1, maximum-scale=1” name=“viewport”>
      <title>{$title_pagina}</title>
      <link href="resources/css/css.css" rel="stylesheet"/>
+     <script src="resources/js/jquery/jquery.min.js"></script>
+     <script src="resources/js/jquery.mask/jquery.mask.min.js"></script>
      <script src="resources/js/js.min.js"></script>
 </head>
 <body>

@@ -1,0 +1,10 @@
+.feed{
+    
+    .conteudo{
+        width: 47,14%;
+        @include desktop{
+            width: 47,14%;  
+        }
+    }
+   
+}
