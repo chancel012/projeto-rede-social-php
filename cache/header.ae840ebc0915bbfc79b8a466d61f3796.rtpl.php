@@ -26,7 +26,23 @@
                     </form>
                </div>
                <?php }else{ ?>
-               Aqui vem nosso header com pesquisa e menu
+                    <div class="pesquisa">
+                         <form accept="pesquisa" method="GET">
+                              <input type="text" name="q" placeholder="pesquisar">
+                              <input type="submit" value="?">
+                         </form>
+
+                    </div>
+                    <div class="pessoal">
+                         <div class="menu">
+                              <img src="resources/imagens/icone_menu.png">
+                              <ul>
+                                   <li><a href="#">Configurações</a></li>
+                                   <li><a href="#">Sair</a></li>
+                              </ul>
+                         </div>
+                         <img src="resources/imagens/icone_user.png">
+                    </div>
                <?php } ?>
           </div>     
      </header>
