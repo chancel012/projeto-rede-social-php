@@ -6,6 +6,10 @@ use Rain\Tpl;
 class HomeController
 {
 	private $tpl;
+	private $default = array(
+		'footer' => true ,
+		'header_login' => false
+	);
 
 	function __construct()
 	{
@@ -30,8 +34,12 @@ class HomeController
 
 	function __destruct()
 	{
-		$this->tpl->draw("footer", false);
-		//$this->setTpl("footer");
+		if ($this->default['footer'] === true){
+			$this->setTpl("footer");
+		}
+		
+		$this->setTpl("fimHTML");
+
 	}
 
 	 public function setTpl($template, $data=array(), $returnHtml = false)
@@ -50,13 +58,22 @@ class HomeController
 
 	public function login()
 	{
-		$this->setTpl("header", array('title_pagina' => 'Pagina de Login'));
+		$info = array(
+			'title_pagina' => 'Pagina de Login',
+			'header_login' => true,
+		);
+		$this->setTpl("header", $info);
 		$this->setTpl("login");
 	}
 
 	public function feed()
 	{
-		$this->setTpl("header", array('title_pagina' => 'Seu feed'));
+		$info = array(
+			'title_pagina' => 'Seu feed',
+			'header_login' => $this->default['header_login']
+		);
+		$this->default['footer'] = false;
+		$this->setTpl("header", $info);
 		$this->setTpl("inicioCentral", array('classPrincipal' => 'feed'));
 		$this->setTpl("lateralEsqueda");
 		$this->setTpl("feed");
@@ -66,28 +83,48 @@ class HomeController
 
 	public function feed_usuario($request, $response, $args) 
 	{
+		$info = array(
+			'title_pagina' => ' Feed de '.$nome,
+			'header_login' => $this->default['header_login']
+		);
 		$nome = $args['usuario'];
-		$this->setTpl("header", array('title_pagina' => ' Feed de '.$nome));
+		$this->setTpl("header", $info);
 		$this->setTpl('feed_usuario' , array('nome_usuario' => $nome));
 	}
 	public function configuracao()
 	{
-		$this->setTpl("header", array('title_pagina' => ' Configurações'));
+		$info = array(
+			'title_pagina' => ' Configurações',
+			'header_login' => $this->default['header_login']
+		);
+		$this->setTpl("header", $info);
 		$this->setTpl("configuracao");	
 	}
 	public function pesquisa()
 	{
-		$this->setTpl("header",array('title_pagina' => ' Pesquisa'));
+		$info = array(
+			'title_pagina' => 'Pesquisa',
+			'header_login' => $this->default['header_login']
+		);
+		$this->setTpl("header", $info);
 		$this->setTpl("pesquisa");
 	}
 	public function mensagens()
 	{
-		$this->setTpl("header",array('title_pagina' => ' Minhas mensagens'));
+		$info = array(
+			'title_pagina' => ' Minhas mensagens',
+			'header_login' => $this->default['header_login']
+		);
+		$this->setTpl("header", $info);
 		$this->setTpl("mensagens");
 	}
 	public function fotos()
 	{
-		$this->setTpl("header",array('title_pagina' => ' Minhas fotos'));
+		$info = array(
+			'title_pagina' => ' Minhas fotos',
+			'header_login' => $this->default['header_login']
+		);
+		$this->setTpl("header",$info);
 		$this->setTpl("fotos");
 	}
 }

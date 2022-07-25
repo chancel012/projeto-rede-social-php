@@ -2,7 +2,7 @@
     <div class="topo">
         <img src="resources/imagens/icone_user.png"> 
         <div class="info">
-            <p>fulano de tal</p>
+            <p>Fulano de Tal</p>
             <button class="btn-seguir">Seguir</button>
         </div>
     </div>
@@ -13,9 +13,9 @@
     </div>
     <div class="form_quem_sou">
         <form action="#" method="post">
-            <textarea placeholder="Quem sou eu"></textarea>
+            <textarea placeholder="Quem sou eu" maxlength="160"></textarea>
             <input type="submit" name="btn" value="Salvar">
-</form>
+        </form>
 
     </div>
 </section>
