@@ -9,7 +9,7 @@
     <section class="publicacoes">
         <div class="item">
             <div class="topo">
-                <img src="resources/imagens/icone_user.png">
+                <img src="<?php echo htmlspecialchars( $url_base, ENT_COMPAT, 'UTF-8', FALSE ); ?>resources/imagens/icone_user.png">
                 <span>Fulano de Tal</span>
             </div>
 
@@ -26,13 +26,13 @@
                     inceptos adipiscing ultrices varius.
                 </div>
                 <div class="galeria">
-                    <img src="resources/imagens/placeholder.png">
+                    <img src="<?php echo htmlspecialchars( $url_base, ENT_COMPAT, 'UTF-8', FALSE ); ?>resources/imagens/placeholder.png">
                 </div>
             </div>
         </div>
         <div class="item">
             <div class="topo">
-                <img src="resources/imagens/icone_user.png">
+                <img src="<?php echo htmlspecialchars( $url_base, ENT_COMPAT, 'UTF-8', FALSE ); ?>resources/imagens/icone_user.png">
                 <span>Fulano de Tal</span>
             </div>
 
@@ -52,13 +52,13 @@
         </div>
         <div class="item">
             <div class="topo">
-                <img src="resources/imagens/icone_user.png">
+                <img src="<?php echo htmlspecialchars( $url_base, ENT_COMPAT, 'UTF-8', FALSE ); ?>resources/imagens/icone_user.png">
                 <span>Fulano de Tal</span>
             </div>
 
             <div class="info">
                 <div class="galeria">
-                    <img src="resources/imagens/placeholder.png">
+                    <img src="<?php echo htmlspecialchars( $url_base, ENT_COMPAT, 'UTF-8', FALSE ); ?>resources/imagens/placeholder.png">
                 </div>
             </div>
         </div>

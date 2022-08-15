@@ -59,22 +59,30 @@ body{
     font-family: $font_family;
     line-height: $line_height;
     overflow-x: hidden;
+	&.active-lightbox{
+		width: 100vw;
+		height: 100vh;
+		overflow: hidden;
+	}
 }
 a{
     color: $color;
     text-decoration: none;
 }
 
-content{
+.content{
     width: 100%;
     max-width: 1450px;
     margin: 0 auto;
     padding: 0 25px;
 
-	.feed{
+	&.feed{
+		/*display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;*/ 
 		display: flex;
 		justify-content: space-between;
-		flex-wrap: wrap;
-	}
+		flex-wrap: nowrap;
+	} 
 
 }

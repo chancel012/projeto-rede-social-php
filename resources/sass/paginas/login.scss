@@ -17,6 +17,9 @@
         max-width: 600px;
         padding: 50px 70px;
         }
+       /* @include desktop{
+            padding: 50px 70px;
+        } */
 
         legend{
             font-size: 35px;
@@ -53,5 +56,6 @@
             line-height: 1;
             width: auto;
             border-radius: 10%;
+            margin-bottom: 0px;
         }
 }

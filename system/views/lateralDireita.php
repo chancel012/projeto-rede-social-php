@@ -1,50 +1,61 @@
 <section class="lateral_direita">
+{if="$links == false && $usuario_logado['id'} != $usuario['id']"}    
+        <div class="form_nova_mensagens">
+             <form class="form_ajax" action="{$url_base}nova_mensagem" method="post">
+                <textarea placeholder="Nova Mensagens"></textarea>
+                      <input type="submit" name="btn" value="Enviar">
+           </form>
+        </div>
+{/if}
   <div class="fotos">
-    <p>fotos</p>
+    <a href="{$url_base}feed/chancel">
+        <p>fotos</p>
+    </a>
+    
     <ul>
         <li>
-            <a href="#">
-                <img src="resources/imagens/placeholder.png">
+            <a href="{$url_base}feed/chancel">
+                <img src="{$url_base}resources/imagens/placeholder.png">
             </a>
 
         </li>
     </ul>
     <ul>
         <li>
-            <a href="#">
-                <img src="resources/imagens/placeholder.png">
+            <a href="{$url_base}feed/chancel">
+                <img src="{$url_base}resources/imagens/placeholder.png">
             </a>
 
         </li>
     </ul>
     <ul>
         <li>
-            <a href="#">
-                <img src="resources/imagens/placeholder.png">
+            <a href="{$url_base}feed/chancel">
+                <img src="{$url_base}resources/imagens/placeholder.png">
             </a>
 
         </li>
     </ul>
     <ul>
         <li>
-            <a href="#">
-                <img src="resources/imagens/placeholder.png">
+            <a href="{$url_base}feed/chancel">
+                <img src="{$url_base}resources/imagens/placeholder.png">
             </a>
 
         </li>
     </ul>
     <ul>
         <li>
-            <a href="#">
-                <img src="resources/imagens/placeholder.png">
+            <a href="{$url_base}feed/chancel">
+                <img src="{$url_base}resources/imagens/placeholder.png">
             </a>
 
         </li>
     </ul>
     <ul>
         <li>
-            <a href="#">
-                <img src="resources/imagens/placeholder.png">
+            <a href="{$url_base}feed/chancel">
+                <img src="{$url_base}resources/imagens/placeholder.png">
             </a>
 
         </li>
@@ -54,48 +65,48 @@
 <p>seguindo</p>
     <ul>
         <li>
-            <a href="#">
-                <img src="resources/imagens/placeholder.png">
+            <a href="{$url_base}feed/chancel">
+                <img src="{$url_base}resources/imagens/placeholder.png">
             </a>
 
         </li>
     </ul>
     <ul>
         <li>
-            <a href="#">
-                <img src="resources/imagens/placeholder.png">
+            <a href="{$url_base}feed/chancel">
+                <img src="{$url_base}resources/imagens/placeholder.png">
             </a>
 
         </li>
     </ul>
     <ul>
         <li>
-            <a href="#">
-                <img src="resources/imagens/placeholder.png">
+            <a href="{$url_base}feed/chancel">
+                <img src="{$url_base}resources/imagens/placeholder.png">
             </a>
 
         </li>
     </ul>
     <ul>
         <li>
-            <a href="#">
-                <img src="resources/imagens/placeholder.png">
+            <a href="{$url_base}feed/chancel">
+                <img src="{$url_base}resources/imagens/placeholder.png">
             </a>
 
         </li>
     </ul>
     <ul>
         <li>
-            <a href="#">
-                <img src="resources/imagens/placeholder.png">
+            <a href="{$url_base}feed/chancel">
+                <img src="{$url_base}resources/imagens/placeholder.png">
             </a>
 
         </li>
     </ul>
     <ul>
         <li>
-            <a href="#">
-                <img src="resources/imagens/placeholder.png">
+            <a href="{$url_base}feed/chancel">
+                <img src="{$url_base}resources/imagens/placeholder.png">
             </a>
 
         </li>

@@ -1,1 +1,1 @@
-<dic class="content {$classPrincipal}">
+<div class="content {$classPrincipal}">

@@ -42,3 +42,21 @@ input[type="submit"]{
         background-color: $color_background_botao;
     }
 }
+.alerta{
+    width: 100%;
+    margin-top: 15px;
+    padding: 10px;
+    font-size: 14px;
+    color: #686868;
+    display: none;
+    &.sucesso{
+          background-color: #00bb005e;
+       display: block;   
+    }
+    &.erro{
+        
+    background-color: #cc040457;
+    display: block;
+    }
+  
+}

@@ -4,7 +4,7 @@
     <ul>
         <li>
             <a href="#">
-                <img src="resources/imagens/placeholder.png">
+                <img src="<?php echo htmlspecialchars( $url_base, ENT_COMPAT, 'UTF-8', FALSE ); ?>resources/imagens/placeholder.png">
             </a>
 
         </li>
@@ -12,7 +12,7 @@
     <ul>
         <li>
             <a href="#">
-                <img src="resources/imagens/placeholder.png">
+                <img src="<?php echo htmlspecialchars( $url_base, ENT_COMPAT, 'UTF-8', FALSE ); ?>resources/imagens/placeholder.png">
             </a>
 
         </li>
@@ -20,7 +20,7 @@
     <ul>
         <li>
             <a href="#">
-                <img src="resources/imagens/placeholder.png">
+                <img src="<?php echo htmlspecialchars( $url_base, ENT_COMPAT, 'UTF-8', FALSE ); ?>resources/imagens/placeholder.png">
             </a>
 
         </li>
@@ -28,7 +28,7 @@
     <ul>
         <li>
             <a href="#">
-                <img src="resources/imagens/placeholder.png">
+                <img src="<?php echo htmlspecialchars( $url_base, ENT_COMPAT, 'UTF-8', FALSE ); ?>resources/imagens/placeholder.png">
             </a>
 
         </li>
@@ -36,7 +36,7 @@
     <ul>
         <li>
             <a href="#">
-                <img src="resources/imagens/placeholder.png">
+                <img src="<?php echo htmlspecialchars( $url_base, ENT_COMPAT, 'UTF-8', FALSE ); ?>resources/imagens/placeholder.png">
             </a>
 
         </li>
@@ -44,7 +44,7 @@
     <ul>
         <li>
             <a href="#">
-                <img src="resources/imagens/placeholder.png">
+                <img src="<?php echo htmlspecialchars( $url_base, ENT_COMPAT, 'UTF-8', FALSE ); ?>resources/imagens/placeholder.png">
             </a>
 
         </li>
@@ -55,7 +55,7 @@
     <ul>
         <li>
             <a href="#">
-                <img src="resources/imagens/placeholder.png">
+                <img src="<?php echo htmlspecialchars( $url_base, ENT_COMPAT, 'UTF-8', FALSE ); ?>resources/imagens/placeholder.png">
             </a>
 
         </li>
@@ -63,7 +63,7 @@
     <ul>
         <li>
             <a href="#">
-                <img src="resources/imagens/placeholder.png">
+                <img src="<?php echo htmlspecialchars( $url_base, ENT_COMPAT, 'UTF-8', FALSE ); ?>resources/imagens/placeholder.png">
             </a>
 
         </li>
@@ -71,7 +71,7 @@
     <ul>
         <li>
             <a href="#">
-                <img src="resources/imagens/placeholder.png">
+                <img src="<?php echo htmlspecialchars( $url_base, ENT_COMPAT, 'UTF-8', FALSE ); ?>resources/imagens/placeholder.png">
             </a>
 
         </li>
@@ -79,7 +79,7 @@
     <ul>
         <li>
             <a href="#">
-                <img src="resources/imagens/placeholder.png">
+                <img src="<?php echo htmlspecialchars( $url_base, ENT_COMPAT, 'UTF-8', FALSE ); ?>resources/imagens/placeholder.png">
             </a>
 
         </li>
@@ -87,7 +87,7 @@
     <ul>
         <li>
             <a href="#">
-                <img src="resources/imagens/placeholder.png">
+                <img src="<?php echo htmlspecialchars( $url_base, ENT_COMPAT, 'UTF-8', FALSE ); ?>resources/imagens/placeholder.png">
             </a>
 
         </li>
@@ -95,7 +95,7 @@
     <ul>
         <li>
             <a href="#">
-                <img src="resources/imagens/placeholder.png">
+                <img src="<?php echo htmlspecialchars( $url_base, ENT_COMPAT, 'UTF-8', FALSE ); ?>resources/imagens/placeholder.png">
             </a>
 
         </li>

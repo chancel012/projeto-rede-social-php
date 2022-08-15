@@ -7,7 +7,7 @@
     .topo{
         width: 100%;
         display: inline-flex;
-        align-items: center;
+        align-items: flex-start;
         margin-bottom: 25%;
 
         img{
@@ -15,18 +15,22 @@
             margin-right: 18px;
             border-radius: 50%;
             background-color: #009bdb;
+            display: block;
         }
         .info{
             width:calc(100% - 78px);
 
-            p{
-                font-size: 16px;
-                color: #acacac;
-                font-family:'Montserrat Medium';
-                line-height:1;
+            a{
+                display: block;
+                p{
+                    font-size: 16px;
+                    color: #acacac;
+                    font-family:'Montserrat Medium';
+                    line-height:1.8;
+                }
             }
             .btn-seguir{
-                margin-top: 10px;
+                margin-top: 4px;
                 border: 0px;
                 padding: 6px;
                 $line_height: 1;
@@ -36,6 +40,7 @@
                 border-radius: 5px;
                 cursor:pointer;
                 transition: .25s;
+                
                 &:hover{
                     background-color: #748e6f;
                 }
@@ -82,10 +87,58 @@
                 margin-right: 0;
                 display: bolck;
                 margin-top: -42px;
-                z-index: 9;
+                z-index: 0;
                 position:absolute;
                 right: 0;
             }
         }
+    }
+    .lista_mensagens{
+        width: 100%;
+        .item{ 
+			border: 1px solid #dfdfdf;
+			padding: 20px 15px;
+			margin-bottom: 10px;
+			display: inline-flex;
+			flex-wrap: wrap;
+			align-items : flex-start; 
+            transition: .25s;
+            cursor: pointer;
+            &:hover{
+                background-color: #f1f1f1;
+            }
+
+			.foto{
+				width: 45px;
+				margin-right: 15px;
+
+				.img{
+					width: 100%;
+					background: #009bdb;
+					border-radius: 50%;
+					display: block;
+				}
+			}
+
+			.info{
+				width: calc(100% - 60px);
+
+				p.nome{
+					margin: 0px 0 5px 0;
+					line-height: 1;
+					font-size: 16px;
+					color: #acacac;
+					font-family: 'Montserrat Medium';
+
+				}
+
+			    .bio{
+					font-size: 14px;
+					color: #4b4b4b;
+					font-family: 'Montserrat Regular';
+				}
+			}
+
+		}
     }
 }
