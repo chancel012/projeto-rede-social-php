@@ -8,7 +8,7 @@
             <a href="{$url_base}feed/{$usuario['url_usuario']}">
                 <p>{$usuario['nome_usuario']}</p>
             </a>
-            {if="$usuario_logado['id"} != $usuario['id']"}
+            {if="$usuario_logado['id'] != $usuario['id']"}
             <button class="btn-seguir">Seguir</button>
             {/if}
         </div>

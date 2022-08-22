@@ -26,7 +26,7 @@
                          <input type="email" name="email" placeholder="E-mail" >
                          <input type="password" name="senha" placeholder="Senha">
                          <input type="submit" name="btn" value="Entrar">
-                         <div class="alerta">E-mail ou senha invalido</div>
+                         <div class="alerta"></div>
                     </form>
                </div>
                {else}

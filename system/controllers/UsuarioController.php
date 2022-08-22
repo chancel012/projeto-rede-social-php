@@ -18,12 +18,12 @@ class UsuarioController
     }
     public function login_usuario($request, $response, $args)
     {
-        $email = $request ->getParsedBodyParam('email');
-        $senha = $request ->getParsedBodyParam('senha');
-
+        $email = $request->getParsedBodyParam('email');
+        $senha = $request->getParsedBodyParam('senha');
+        
         $campos = array(
             'id',
-             'email_usuario'
+            'email_usuario'
         );
 
         $where = array(
@@ -34,19 +34,19 @@ class UsuarioController
         if($resultado){
 
             $retorno = $this->login($email, $senha);
-
-            if($retorno) {
-                     $resposta_retorno['status'] = '1';
-                     $resposta_retorno['redirecionnar_pagina'] = URL_BASE.'feed';
-                     return $response->withJson($resposta_retorno);
-            }else{
-             
-                     $resposta_retorno['status'] = '0';
-                     $resposta_retorno['msg'] = 'Erro ao fazer login apos o seu cadastro na Rede Social';
-                     return $response->withJson($resposta_retorno);
-            }
             
-        
+            if($retorno) {
+                $resposta_retorno['status'] = '1';
+                $resposta_retorno['redirecionar_pagina'] = URL_BASE.'feed';
+                echo "<pre>";
+                var_dump($resposta_retorno);
+                return $response->withJson($resposta_retorno);
+                    
+            }else{
+                $resposta_retorno['status'] = '0';
+                $resposta_retorno['msg'] = 'Erro ao fazer login apos o seu cadastro na Rede Social';
+                return $response->withJson($resposta_retorno);
+            }
         }else{
             $resposta_retorno['status'] = '0';
             $resposta_retorno['msg'] = 'E-mail ou senha inválidos';
@@ -138,9 +138,9 @@ class UsuarioController
                 'email_usuario' => $email
             );
             $resultado = $this->usuario->selectUsuario($campos, $where);
-
+            
             if (password_verify($senha, $resultado[0]['senha_usuario'])) {
-
+                
                 $this->usuario->setData($resultado[0]);
 
                 $_SESSION['usuario_logado'] = $this->usuario->getValues();
@@ -150,8 +150,8 @@ class UsuarioController
             } else{
                 return false;
             }
-            }else{
-                return false;
+        }else{
+            return false;
         }
     }
 

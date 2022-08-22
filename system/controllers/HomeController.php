@@ -73,15 +73,15 @@ class HomeController
 	public function login()
 	{
 		if(isset($_SESSION['usuario_logado']) && $_SESSION['usuario_logado'] != NULL){
-            header("location:".URL_BASE."feed");
+			header("location:".URL_BASE."feed");
             exit();
-
 		}
 		$info = array(
 			'title_pagina' => 'Pagina de Login',
 			'header_login' => true,
 			'url_base' => URL_BASE
 		);
+
 		$this->setTpl("header", $info);
 		$this->setTpl("login");
 	}

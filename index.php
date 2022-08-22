@@ -27,8 +27,3 @@ $app->post('/quem_sou_eu','\DEV\Controllers\UsuarioController:quem_sou_eu');
 $app->run();
 
 ?>
-
-
-
-
-
